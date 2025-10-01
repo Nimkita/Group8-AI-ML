@@ -226,7 +226,7 @@ public class WallJumpAgent : Agent
             }
 
         transform.Rotate(rotateDir, Time.fixedDeltaTime * 300f);
-        m_AgentRb.AddForce(dirToGo * m_WallJumpSettings.agentRunSpeed,
+        m_AgentRb.AddForce(dirToGo * m_WallJumpSettings.agentRunSpeed * 2f,
             ForceMode.VelocityChange);
 
         if (jumpingTime > 0f)
