@@ -21,11 +21,9 @@ def get_yaml_param(yaml_directory):
 
         param_value = words[1]
 
-        match param_type:
-            case "learning_rate" | "batch_size" | "buffer_size" | "gamma" | "hidden_units" | "num_layers" | "max_steps"| "lambd":
-                params.update({param_type: param_value})
-                if not yaml_validator.validate_range(param_type, param_value): # Check if value is in typical range, if not: append it to the notes key of params
-                    params["notes"].append(f"{param_type} out of range")
+        params.update({param_type: param_value})
+        if not yaml_validator.validate_range(param_type, param_value): # Check if value is in typical range, if not: append it to the notes key of params
+            params["notes"].append(f"{param_type} out of range or invalid")
 
     txt_yaml.close()
     return params
