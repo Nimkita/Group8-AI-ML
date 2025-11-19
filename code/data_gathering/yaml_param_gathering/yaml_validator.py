@@ -22,7 +22,7 @@ def validate_range(parameter, value):
                     return False
 
             case "buffer_size":
-                if not 50000 <= value <= 1000000:
+                if not 2048 <= value <= 1000000:
                     return False
 
             # Typical range = 1000 - 10000 BUT default = 0
