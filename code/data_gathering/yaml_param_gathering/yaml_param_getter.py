@@ -1,7 +1,6 @@
-import csv
 import yaml_validator
 
-# IMPORTANT NOTE: in our documentation we called it "steps_planned" but in yaml it is called "max_steps" (which is the naming convention here)
+# TODO is this still the case ? IMPORTANT NOTE: in our documentation we called it "steps_planned" but in yaml it is called "max_steps" (which is the naming convention here)
 
 # Reads the yaml parameters of the run and returns them as a dictionary
 def get_yaml_param(yaml_directory):
@@ -11,6 +10,7 @@ def get_yaml_param(yaml_directory):
     params = {}
     params.setdefault("notes", [])
 
+    # Strip the param_type
     for line in txt_yaml:
         words = line.strip().split()
         param_type = words[0].replace(":","")

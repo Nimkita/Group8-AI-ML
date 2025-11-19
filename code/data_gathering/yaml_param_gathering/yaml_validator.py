@@ -1,4 +1,3 @@
-# Checks if the values of the yaml file parameters are in between the typical ranges or if they correspond to accepted strings(as per the website: https://unity-technologies.github.io/ml-agents/Training-Configuration-File/#common-trainer-configurations)
 # Note: keep_checkpoints and summary_frequency typical ranges unspecified
 
 def is_number(input):
@@ -8,6 +7,7 @@ def is_number(input):
     except (ValueError, TypeError):
         return False
 
+# Checks if the values of the yaml file parameters are in between the typical ranges or if they correspond to accepted strings(as per the website: https://unity-technologies.github.io/ml-agents/Training-Configuration-File/#common-trainer-configurations)
 def validate_range(parameter, value):
     if is_number(value):
         value = float(str(value).strip())
