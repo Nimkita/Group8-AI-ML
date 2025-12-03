@@ -1,0 +1,124 @@
+C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\torch_utils\torch.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\torch_utils\torch.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+[INFO] Connected to Unity environment with package version 3.0.0-exp.1 and communication version 1.5.0
+[INFO] Connected new brain: 3DBall?team=0
+
+
+	Unity Technologies
+
+ Version information:
+  ml-agents: 1.1.0,
+  ml-agents-envs: 1.1.0,
+  Communicator API: 1.5.0,
+  PyTorch: 2.9.1+cpu
+[INFO] Hyperparameters for behavior name 3DBall: 
+	trainer_type:	ppo
+	hyperparameters:	
+	  batch_size:	32
+	  buffer_size:	145632
+	  learning_rate:	0.0003
+	  beta:	0.005
+	  epsilon:	0.2
+	  lambd:	0.95
+	  num_epoch:	3
+	  shared_critic:	False
+	  learning_rate_schedule:	linear
+	  beta_schedule:	linear
+	  epsilon_schedule:	linear
+	checkpoint_interval:	500000
+	network_settings:	
+	  normalize:	False
+	  hidden_units:	66
+	  num_layers:	3
+	  vis_encode_type:	simple
+	  memory:	None
+	  goal_conditioning_type:	hyper
+	  deterministic:	False
+	reward_signals:	
+	  extrinsic:	
+	    gamma:	0.99
+	    strength:	1.0
+	    network_settings:	
+	      normalize:	False
+	      hidden_units:	128
+	      num_layers:	2
+	      vis_encode_type:	simple
+	      memory:	None
+	      goal_conditioning_type:	hyper
+	      deterministic:	False
+	init_path:	None
+	keep_checkpoints:	5
+	even_checkpoints:	False
+	max_steps:	100000
+	time_horizon:	64
+	summary_freq:	10000
+	threaded:	False
+	self_play:	None
+	behavioral_cloning:	None
+[INFO] 3DBall. Step: 10000. Time Elapsed: 13.384 s. Mean Reward: 1.209. Std of Reward: 0.743. Training.
+[INFO] 3DBall. Step: 20000. Time Elapsed: 19.673 s. Mean Reward: 1.168. Std of Reward: 0.664. Training.
+[INFO] 3DBall. Step: 30000. Time Elapsed: 24.973 s. Mean Reward: 1.147. Std of Reward: 0.636. Training.
+[INFO] 3DBall. Step: 40000. Time Elapsed: 31.373 s. Mean Reward: 1.146. Std of Reward: 0.693. Training.
+[INFO] 3DBall. Step: 50000. Time Elapsed: 35.775 s. Mean Reward: 1.175. Std of Reward: 0.732. Training.
+[INFO] 3DBall. Step: 60000. Time Elapsed: 40.424 s. Mean Reward: 1.176. Std of Reward: 0.708. Training.
+[INFO] 3DBall. Step: 70000. Time Elapsed: 45.238 s. Mean Reward: 1.180. Std of Reward: 0.678. Training.
+[INFO] 3DBall. Step: 80000. Time Elapsed: 49.806 s. Mean Reward: 1.198. Std of Reward: 0.770. Training.
+[INFO] 3DBall. Step: 90000. Time Elapsed: 54.588 s. Mean Reward: 1.157. Std of Reward: 0.688. Training.
+[INFO] 3DBall. Step: 100000. Time Elapsed: 59.623 s. Mean Reward: 1.181. Std of Reward: 0.708. Training.
+C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\torch_entities\model_serialization.py:164: UserWarning: # 'dynamic_axes' is not recommended when dynamo=True, and may lead to 'torch._dynamo.exc.UserError: Constraints violated.' Supply the 'dynamic_shapes' argument instead if export is unsuccessful.
+  torch.onnx.export(
+W1203 21:51:21.604000 11536 site-packages\torch\onnx\_internal\exporter\_compat.py:114] Setting ONNX exporter to use operator set version 18 because the requested opset_version 9 is a lower version than we have implementations for. Automatic version conversion will be performed, which may not be successful at converting to the requested version. If version conversion is unsuccessful, the opset version of the exported model will be kept at 18. Please consider setting opset_version >=18 to leverage latest ONNX features
+W1203 21:51:22.148000 11536 site-packages\torch\onnx\_internal\exporter\_registration.py:107] torchvision is not installed. Skipping torchvision::nms
+Traceback (most recent call last):
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\pawel\.conda\envs\mlagents2\Scripts\mlagents-learn.exe\__main__.py", line 6, in <module>
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\learn.py", line 270, in main
+    run_cli(parse_command_line())
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\learn.py", line 266, in run_cli
+    run_training(run_seed, options, num_areas)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\learn.py", line 138, in run_training
+    tc.start_learning(env_manager)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents_envs\timers.py", line 305, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\trainer_controller.py", line 200, in start_learning
+    self._save_models()
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents_envs\timers.py", line 305, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\trainer_controller.py", line 80, in _save_models
+    self.trainers[brain_name].save_model()
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\trainer\rl_trainer.py", line 172, in save_model
+    model_checkpoint = self._checkpoint()
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents_envs\timers.py", line 305, in wrapped
+    return func(*args, **kwargs)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\trainer\rl_trainer.py", line 144, in _checkpoint
+    export_path, auxillary_paths = self.model_saver.save_checkpoint(
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\model_saver\torch_model_saver.py", line 60, in save_checkpoint
+    self.export(checkpoint_path, behavior_name)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\model_saver\torch_model_saver.py", line 65, in export
+    self.exporter.export_policy_model(output_filepath)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\mlagents\trainers\torch_entities\model_serialization.py", line 164, in export_policy_model
+    torch.onnx.export(
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\torch\onnx\__init__.py", line 296, in export
+    return _compat.export_compat(
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\torch\onnx\_internal\exporter\_compat.py", line 143, in export_compat
+    onnx_program = _core.export(
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\torch\onnx\_internal\exporter\_flags.py", line 23, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\torch\onnx\_internal\exporter\_core.py", line 1336, in export
+    result = strategy(model, args, kwargs, dynamic_shapes=dynamic_shapes)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\torch\onnx\_internal\exporter\_capture_strategies.py", line 126, in __call__
+    self._success(model)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\torch\onnx\_internal\exporter\_capture_strategies.py", line 238, in _success
+    self._verbose_print(
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\site-packages\torch\onnx\_internal\exporter\_capture_strategies.py", line 29, in <lambda>
+    return lambda *args, **kwargs: print("[torch.onnx]", *args, **kwargs)
+  File "C:\Users\pawel\.conda\envs\mlagents2\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 92: character maps to <undefined>
+[torch.onnx] Obtain model graph for `SimpleActor([...]` with `torch.export.export(..., strict=False)`...
+[torch.onnx] 

@@ -1,0 +1,12 @@
+step_number,time_elapsed,mean_reward,std_of_reward,cpu_percent,cpu_source,ram_percent,ram_source,ram_mb
+0,0.0,,,,system,64.2,system,
+10000,11.375,0.909,0.57,13.577272727272726,process_tree,6.63,process_tree,1051.8
+20000,15.671,0.867,0.516,13.618181818181819,process_tree,6.78,process_tree,1075.34
+30000,19.821,0.918,0.614,13.659090909090908,process_tree,6.92,process_tree,1098.49
+40000,24.316,0.882,0.514,10.4,process_tree,7.05,process_tree,1119.42
+50000,28.55,0.916,0.558,11.045454545454545,process_tree,7.2,process_tree,1142.15
+60000,32.809,0.924,0.594,3.227272727272727,process_tree,7.33,process_tree,1162.91
+70000,37.433,0.887,0.551,9.768181818181818,process_tree,7.48,process_tree,1187.7
+80000,43.966,0.935,0.557,18.849999999999998,process_tree,7.62,process_tree,1209.32
+90000,50.567,0.88,0.557,8.445454545454545,process_tree,7.76,process_tree,1231.69
+100000,55.792,0.883,0.582,2.6045454545454545,process_tree,8.03,process_tree,1275.02
